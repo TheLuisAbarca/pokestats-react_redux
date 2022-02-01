@@ -2,19 +2,9 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { LinkContainer } from 'react-router-bootstrap';
 // import { useDispatch } from 'react-redux';
-// import { joinMission, leaveMission } from '../../redux/missions/missions';
 // eslint-disable-next-line
 const AllPokemon = ({ pokemon }) => {
   // const dispatch = useDispatch();
-  /*
-  const clickHandler = () => {
-    if (!mission.reserved) {
-      dispatch(joinMission(mission.mission_id));
-    } else {
-      dispatch(leaveMission(mission.mission_id));
-    }
-  };
-  */
   // console.log(pokemon);
 
   return (
