@@ -27,7 +27,7 @@ AllPokemon.propTypes = {
   pokemon: PropTypes.shape({
     name: PropTypes.string.isRequired,
     image: PropTypes.string,
-    weight: PropTypes.number.isRequired,
+    weight: PropTypes.number,
   }).isRequired,
 };
 
