@@ -7,6 +7,15 @@ const FETCH_ONEPOKE_PENDING = 'FETCH_ONEPOKE_PENDING';
 const FETCH_ONEPOKE_SUCCESS = 'FETCH_ONEPOKE_SUCCESS';
 const FETCH_ONEPOKE_ERROR = 'FETCH_ONEPOKE_ERROR';
 
+const initialStateSinglePokemon = {
+  details: {
+    name: '',
+    abilities: [],
+    sprites: {},
+    stats: [],
+  },
+};
+
 export const fetchPokemonsPending = () => ({
   type: FETCH_POKE_PENDING,
 });
@@ -53,7 +62,25 @@ export const fetchPokemon = (name) => async (dispatch) => {
   }
 };
 
-const pokemonsReducer = (state = {}, action) => {
+/*
+export const fetchPokemon = (name) => async (dispatch) => {
+  dispatch(fetchPokemonsPending());
+  const response = await pokemonProps(name);
+  console.log(response);
+  response
+    .then((data) => {
+      const pokemon = {
+        name: data.name,
+        abilities: data.abilities,
+        sprites: data.sprites,
+        stats: data.stats,
+      };
+      dispatch(fetchSinglePokemonSuccess(pokemon));
+    },
+    (error) => dispatch(fetchSinglePokemonError(error)));
+};
+*/
+const pokemonsReducer = (state = initialStateSinglePokemon, action) => {
   switch (action.type) {
     case FETCH_POKE_PENDING:
       return {
@@ -81,7 +108,7 @@ const pokemonsReducer = (state = {}, action) => {
       return {
         ...state,
         pendingPokemon: false,
-        pokemons: [action.pokemons],
+        details: action.pokemons,
       };
     case FETCH_ONEPOKE_ERROR:
       return {
