@@ -1,5 +1,4 @@
 import React from 'react';
-// import PropTypes from 'prop-types';
 import { useDispatch } from 'react-redux';
 import { fetchPokemons } from '../../redux/filter/filter';
 
@@ -37,7 +36,7 @@ const PokeFilterTypes = () => {
 
   return (
     <div className="form-group w-75 m-auto">
-      <h3 className="d-flex justify-content-center align-items-center">
+      <h3 className="d-flex justify-content-center align-items-center text-app">
         Pokemon Type:
         <span className="ml-2">
           <select name="category" className="custom-select" value={category} onChange={(e) => handleFilterChange(e)}>
@@ -46,7 +45,6 @@ const PokeFilterTypes = () => {
           </select>
         </span>
       </h3>
-      <h3>{ category }</h3>
     </div>
   );
 };
