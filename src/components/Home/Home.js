@@ -14,19 +14,7 @@ const Home = () => {
   useEffect(() => {
     dispatch(fetchPokemons('normal'));
   }, [dispatch]);
-  console.log(pokemonsData);
 
-  // const loader = <div className="loader" />;
-  // const loader = <div className="loader bg-black">Loading</div>;
-  /*
-  const loader = (
-    <div className="d-flex justify-content-center">
-      <Spinner animation="grow" />
-    </div>
-  );
-  */
-  // const loader = <Spinner animation="border" />;
-  // const loader = <div className="bg-black text-app">Loading</div>;
   const loader = (
     <div className="d-flex justify-content-center">
       <div className="loader" />

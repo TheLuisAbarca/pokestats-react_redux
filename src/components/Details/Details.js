@@ -14,7 +14,6 @@ const Details = () => {
   useEffect(() => {
     dispatch(fetchPokemon(name));
   }, [dispatch]);
-  console.log(pokemonData);
 
   const loader = <div className="loader bg-black">Loading</div>;
 
