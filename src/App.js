@@ -13,7 +13,7 @@ import musicvtt from './assets/110-pokemon_center.mp3.vtt';
 const App = () => {
   const { pathname } = useLocation();
   useEffect(() => {
-    window.scrollTo(0, 0);
+    // window.scrollTo(0, 0);
   }, [pathname]);
   return (
     <>

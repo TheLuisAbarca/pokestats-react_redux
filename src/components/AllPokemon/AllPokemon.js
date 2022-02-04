@@ -39,15 +39,15 @@ const AllPokemon = ({ pokemon, index }) => {
                   xs={12}
                   className="d-flex justify-content-end"
                 >
-                  <i className="far fa-arrow-alt-circle-right text-white mt-1 mb-4 h5" />
+                  <i className="far fa-arrow-alt-circle-right text-app mt-1 mb-4 h5" />
                 </Col>
               </Row>
               <span
                 className="d-flex flex-column align-items-end text-white mt-4"
                 style={{ cursor: 'pointer' }}
               >
-                <h5 className="d-inline-block m-0 text-end fw-bold">{pokemon.name.toUpperCase()}</h5>
-                <p>
+                <h5 className="d-inline-block m-0 text-end fw-bold font-app">{pokemon.name.toUpperCase()}</h5>
+                <p className="font-app">
                   {
                   Number(pokemon.weight).toLocaleString()
                 }
