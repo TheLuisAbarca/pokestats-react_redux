@@ -12,11 +12,12 @@ import './index.css';
 import App from './App';
 
 // store.dispatch(fetchPokemons('normal'));
+const URL = process.env.PUBLIC_URL;
 
 ReactDOM.render(
   <React.StrictMode>
     <Provider store={store}>
-      <Router>
+      <Router basename={URL}>
         <App />
       </Router>
     </Provider>
