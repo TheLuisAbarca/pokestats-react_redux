@@ -20,7 +20,7 @@ const DetailCard = ({ pokemon }) => {
 
   return (
     <div className="card body-dark">
-      <Row className="card-title text-app">
+      <Row className="card-title font-app">
         <h2>{pokemon.details.name.toUpperCase()}</h2>
       </Row>
       <Row
@@ -33,7 +33,7 @@ const DetailCard = ({ pokemon }) => {
             sm={12}
             md={3}
             lg={4}
-            className="d-flex justify-content-center"
+            className="d-flex justify-content-center abilities"
           >
             <div
               className="badge badge-pill mb-2 mb-md-0 bg-dark2 text-app"

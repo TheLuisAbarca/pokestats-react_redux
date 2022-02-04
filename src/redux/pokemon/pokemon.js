@@ -14,6 +14,10 @@ const initialStateSinglePokemon = {
     sprites: {},
     stats: [],
   },
+  pending: false,
+  pendingPokemon: false,
+  error: null,
+  pokemons: [],
 };
 
 export const fetchPokemonsPending = () => ({
