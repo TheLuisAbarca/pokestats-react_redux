@@ -1,11 +1,11 @@
 import configureMockStore from 'redux-mock-store';
 import thunk from 'redux-thunk';
 import fetchMock from 'fetch-mock';
-import { 
-    FETCH_POKE_PENDING, FETCH_POKE_SUCCESS,
+import {
+  FETCH_POKE_PENDING, FETCH_POKE_SUCCESS,
 } from './pokemon/pokemon';
 import {
-    FILTER_TYPE, fetchPokemons
+  FILTER_TYPE, fetchPokemons,
 } from './filter/filter';
 
 const middlewares = [thunk];

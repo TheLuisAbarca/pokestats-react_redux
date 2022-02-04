@@ -7,30 +7,30 @@ describe('DetailCard test', () => {
   let wrapper;
   const pokemon = {
     details: {
-        name: 'charizard',
-        abilities: [
-          {
-            ability: {
-              name: 'solar-power',
-              url: 'https://pokeapi.co/api/v2/ability/94/',
-            },
-            is_hidden: true,
-            slot: 3,
+      name: 'charizard',
+      abilities: [
+        {
+          ability: {
+            name: 'solar-power',
+            url: 'https://pokeapi.co/api/v2/ability/94/',
           },
-        ],
-        sprites: {
-          front_default: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/6.png',
+          is_hidden: true,
+          slot: 3,
         },
-        stats: [
-          {
-            base_stat: 100,
-            effort: 0,
-            stat: {
-              name: 'speed',
-              url: 'https://pokeapi.co/api/v2/stat/6/',
-            },
+      ],
+      sprites: {
+        front_default: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/6.png',
+      },
+      stats: [
+        {
+          base_stat: 100,
+          effort: 0,
+          stat: {
+            name: 'speed',
+            url: 'https://pokeapi.co/api/v2/stat/6/',
           },
-        ],
+        },
+      ],
     },
   };
 

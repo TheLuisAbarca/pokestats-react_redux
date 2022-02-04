@@ -1,16 +1,16 @@
 import { mount } from 'enzyme';
 import React from 'react';
-import PokeFilterTypes from './FilterPoke';
 import { Provider } from 'react-redux';
+import PokeFilterTypes from './FilterPoke';
 import store from '../../redux/configureStore';
 
 describe('Filter Type', () => {
   let wrapper;
   beforeEach(() => {
     wrapper = mount(
-        <Provider store={store}>
-            <PokeFilterTypes />
-        </Provider>,
+      <Provider store={store}>
+        <PokeFilterTypes />
+      </Provider>,
     );
   });
 

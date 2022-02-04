@@ -1,9 +1,8 @@
 import { mount } from 'enzyme';
 import React from 'react';
-import { BrowserRouter as Router } from 'react-router-dom';
-import Home from './Home';
-import { render, screen } from '@testing-library/react';
+import { render } from '@testing-library/react';
 import { Provider } from 'react-redux';
+import Home from './Home';
 import store from '../../redux/configureStore';
 
 describe('PokemonList testing', () => {
@@ -16,7 +15,7 @@ describe('PokemonList testing', () => {
     );
   });
   it('Renders pokeball image', () => {
-    expect(wrapper.find({ alt: "Pokemon World" })).toHaveLength(1);
+    expect(wrapper.find({ alt: 'Pokemon World' })).toHaveLength(1);
   });
 });
 

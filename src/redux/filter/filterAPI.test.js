@@ -1,4 +1,5 @@
 import { fetchPokemons } from './filter';
+
 jest.mock('./filter');
 
 describe('Api Response Filter', () => {
