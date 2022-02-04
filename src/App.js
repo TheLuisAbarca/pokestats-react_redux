@@ -8,6 +8,7 @@ import Home from './components/Home/Home';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import music from './assets/110-pokemon_center.mp3';
+import musicvtt from './assets/110-pokemon_center.mp3.vtt';
 
 const App = () => {
   const { pathname } = useLocation();
@@ -16,14 +17,15 @@ const App = () => {
   }, [pathname]);
   return (
     <>
-      <div className="container-fluid">
-        <audio /* eslint-disable-line */
+      <div className="container-fluid min-width">
+        <audio
           controls
           autoPlay
           loop
           className="d-none justify-content-center align-items-center"
         >
           <source src={music} type="audio/mp3" />
+          <track src={musicvtt} kind="captions" srcLang="en" label="English" />
         </audio>
         <header>
           <Navbar className="px-4 text-app bg-dark1 d-flex justify-content-between">
