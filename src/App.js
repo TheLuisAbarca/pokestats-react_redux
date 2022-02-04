@@ -1,25 +1,53 @@
-import logo from './logo.svg';
+import {
+  Link, Route, Routes, useLocation,
+} from 'react-router-dom';
+import { useEffect } from 'react';
+import { Navbar } from 'react-bootstrap';
+import Details from './components/Details/Details';
+import Home from './components/Home/Home';
 import './App.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import music from './assets/110-pokemon_center.mp3';
+import musicvtt from './assets/110-pokemon_center.mp3.vtt';
 
-function App() {
+const App = () => {
+  const { pathname } = useLocation();
+  useEffect(() => {
+    // window.scrollTo(0, 0);
+  }, [pathname]);
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
+    <>
+      <div className="container-fluid min-width">
+        <audio
+          controls
+          autoPlay
+          loop
+          className="d-none justify-content-center align-items-center"
         >
-          Learn React
-        </a>
-      </header>
-    </div>
+          <source src={music} type="audio/mp3" />
+          <track src={musicvtt} kind="captions" srcLang="en" label="English" />
+        </audio>
+        <header>
+          <Navbar className="px-4 text-app bg-dark1 d-flex justify-content-between">
+            <Link to="/" className="text-decoration-none text-app fw-bold">
+              &#60; HOME
+            </Link>
+            <h3 className="m-0">PokeStats</h3>
+            <span>
+              <i className="me-4 fas fa-microphone" />
+              <i className="fas fa-cog" />
+            </span>
+          </Navbar>
+        </header>
+        <main>
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="details/:name" element={<Details />} />
+          </Routes>
+        </main>
+      </div>
+    </>
   );
-}
+};
 
 export default App;
