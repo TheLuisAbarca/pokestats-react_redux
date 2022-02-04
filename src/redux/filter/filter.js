@@ -5,7 +5,7 @@ import {
 } from '../pokemon/pokemon';
 import { pokemonsType } from '../../API/pokemonAPI';
 
-const FILTER_TYPE = 'FILTER_TYPE';
+export const FILTER_TYPE = 'FILTER_TYPE';
 
 export const changeType = (type) => ({
   type: FILTER_TYPE,

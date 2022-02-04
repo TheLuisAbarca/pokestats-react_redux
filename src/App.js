@@ -12,11 +12,11 @@ import music from './assets/110-pokemon_center.mp3';
 const App = () => {
   const { pathname } = useLocation();
   useEffect(() => {
-    window.scrollTo(0, 0);
+    // window.scrollTo(0, 0);
   }, [pathname]);
   return (
     <>
-      <div className="container-fluid">
+      <div className="container-fluid min-width">
         <audio /* eslint-disable-line */
           controls
           autoPlay

@@ -28,6 +28,11 @@ body {
   color: #ecb365;
 }
 
+.font-app {
+  font-family: 'Gill Sans', sans-serif;
+  color: #ecb365;
+}
+
 .no-shadow:focus {
   box-shadow: none;
 }

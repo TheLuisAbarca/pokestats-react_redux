@@ -25,12 +25,14 @@ const Home = () => {
     <div className="body-dark">
       <Row className="m-0">
         <Col xs={6} sm={6} md={6} className="d-flex justify-content-end">
-          <img
-            src={PokeWorld}
-            alt="Pokemon World"
-            height="150px"
-            className="App-logo"
-          />
+          <a href="/">
+            <img
+              src={PokeWorld}
+              alt="Pokemon World"
+              height="150px"
+              className="App-logo"
+            />
+          </a>
         </Col>
         <Col xs={6} sm={6} md={6} className="p-0 text-white d-flex flex-column justify-content-center">
           <h1 className="fw-bold m-0">GLOBAL</h1>
@@ -57,15 +59,15 @@ const Home = () => {
           md={12}
           className="d-flex flex-column justify-content-start"
         >
-          <h6 className="text-app fw-bold m-0 p-2 d-inline-block">{`Pokemons of ${filter.toUpperCase()} type`}</h6>
+          <h6 className="font-app fw-bold m-0 p-2 d-inline-block">{`Pokemons of ${filter.toUpperCase()} type`}</h6>
         </Col>
-        { /* (pokemonsData.pending) ? loader : pokemonsData.pokemons.map((pokemon, index) => (
-          <AllPokemon key={pokemon.name} pokemon={pokemon} index={index} />
-        )) */}
-        { (pokemonsData.pending) && loader }
-        { (!pokemonsData.pending) && pokemonsData.pokemons.map((pokemon, index) => (
+        { (pokemonsData.pending) ? loader : pokemonsData.pokemons.map((pokemon, index) => (
           <AllPokemon key={pokemon.name} pokemon={pokemon} index={index} />
         )) }
+        { /* (pokemonsData.pending) && loader }
+        { (!pokemonsData.pending) && pokemonsData.pokemons.map((pokemon, index) => (
+          <AllPokemon key={pokemon.name} pokemon={pokemon} index={index} />
+        )) */}
       </Row>
     </div>
   );

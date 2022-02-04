@@ -1,8 +1,8 @@
 import { pokemonProps } from '../../API/pokemonAPI';
 
-const FETCH_POKE_PENDING = 'FETCH_POKE_PENDING';
-const FETCH_POKE_SUCCESS = 'FETCH_POKE_SUCCESS';
-const FETCH_POKE_ERROR = 'FETCH_POKE_ERROR';
+export const FETCH_POKE_PENDING = 'FETCH_POKE_PENDING';
+export const FETCH_POKE_SUCCESS = 'FETCH_POKE_SUCCESS';
+export const FETCH_POKE_ERROR = 'FETCH_POKE_ERROR';
 const FETCH_ONEPOKE_PENDING = 'FETCH_ONEPOKE_PENDING';
 const FETCH_ONEPOKE_SUCCESS = 'FETCH_ONEPOKE_SUCCESS';
 const FETCH_ONEPOKE_ERROR = 'FETCH_ONEPOKE_ERROR';
@@ -14,6 +14,10 @@ const initialStateSinglePokemon = {
     sprites: {},
     stats: [],
   },
+  pending: false,
+  pendingPokemon: false,
+  error: null,
+  pokemons: [],
 };
 
 export const fetchPokemonsPending = () => ({
