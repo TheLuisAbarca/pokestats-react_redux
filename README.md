@@ -1,70 +1,107 @@
-# Getting Started with Create React App
+<p align="center">
+  <a href="https://www.microverse.org/">
+    <img alt="Microverse" src="https://img.shields.io/badge/-Microverse-blueviolet?style=plastic">
+  </a>
+  <a href="https://github.com/TheLuisAbarca/pokestats-react_redux/LICENSE">
+    <img alt="MIT Licensed" src="https://img.shields.io/badge/license-MIT-green?style=plastic">
+  </a>
+  <a href="https://github.com/TheLuisAbarca/pokestats-react_redux">
+    <img alt="GitHub last commit (branch)" src="https://img.shields.io/github/last-commit/TheLuisAbarca/pokestats-react_redux/development?color=blue&style=plastic">
+  </a>
+  <a href="https://github.com/TheLuisAbarca/pokestats-react_redux">
+    <img alt="GitHub Repo stars" src="https://img.shields.io/github/stars/TheLuisAbarca/pokestats-react_redux?color=orange&label=%E2%98%85%20stars%20&style=plastic">
+  </a>
+  <a href="https://github.com/TheLuisAbarca">
+    <img alt="GitHub followers" src="https://img.shields.io/github/followers/TheLuisAbarca?color=yellow&logo=github&style=plastic">
+  </a>
+</p>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# PokeStats
 
-## Available Scripts
+> An awesome React/Redux application that displays the stats of a specific Pokemon. 
+> You can filter through the list of Pokemon and see the stats of the Pokemon you choose.
+> It is builded using the Single Page App (SPA) structure that allows users to:
+    - See a filtered list of pokemons by their Types.
+    - See stats of each pokemon once you click on each one of them.
+    - Enjoy a relaxing music of Pokemon Center in the background.
+    - If you are a developer, try to look for the easter egg that allows you to display music controls.
+> 
 
-In the project directory, you can run:
+| Desktop version (Home View) | Mobile version (Home View)|
+|-----------------|---------------|
+| ![Desktop_image](./readme_imgs/desktop_ver.png) | ![Mobile_Image](./readme_imgs/mobile_ver.png) |
 
-### `npm start`
+| Desktop version (Pokemon View) | Mobile version (Pokemon View)|
+|-----------------|---------------|
+| ![Desktop_image](./readme_imgs/desktop_ver1.png) | ![Mobile_Image](./readme_imgs/mobile_ver1.png) | 
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Built With
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- Html
+- Css
+- JavaScript
+- React
+- Redux
+- API
+- React Bootstrap
+- Jest
 
-### `npm test`
+## Live Demo
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+[Live Demo Link](https://theluisabarca.github.io/pokestats-react_redux/)
 
-### `npm run build`
+## Live Explanation
+[Live Explanation](https://www.loom.com/share/7c4160ba86854344bca7eae729f481d7)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Getting Started
+To get a local copy up and running follow these simple example steps.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- Click on the top right green "code" button.
+- On the dropdown menu, choose "download with zip" button.
+- After download, extract the zip file and you have the project on your machine.
+- After downloading run `npm i` to install all Node packages.
+- Run `npm start` to run the project.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Test
 
-### `npm run eject`
+- After cloning the project you need to run these commands
+  > `npm install`
+  > This command will download all the dependancies of the project.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+As this project counts with css and javascript, you will need to test the following:
+- For tracking linter errors in CSS or SASS  files run:
+  > `npx stylelint "\*_/_.{css,scss}"`
+- And for tracking linter errors in JavaScript files run:
+  > `npx eslint .`
+Or you can use this command if you want to just automatically solve the linter errors:
+  > `npm run fixlinters`
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+At least, use the following command to run all the tests:
+  > `npm test`
+and after that it will prompt you to an interactive window where you have to select:
+  > `Press a` 
+And that should be it.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Author
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+👤 **Luis Abarca**
 
-## Learn More
+- GitHub: [@TheLuisAbarca](https://github.com/TheLuisAbarca)
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## 🤝 Contributing
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Contributions, issues, and feature requests are welcome!
 
-### Code Splitting
+Feel free to check the [issues page](../../issues/).
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## Show your support
 
-### Analyzing the Bundle Size
+Give a ⭐️ if you like this project!
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## Acknowledgments
 
-### Making a Progressive Web App
+Original design idea by Nelson Sakwa in [Behance](https://www.behance.net/sakwadesignstudio).
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## 📝 License
 
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+This project is [MIT](./MIT.md) licensed.
