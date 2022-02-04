@@ -1,4 +1,3 @@
-![](https://img.shields.io/badge/Microverse-blueviolet)
 <p align="center">
   <a href="https://www.microverse.org/">
     <img alt="Microverse" src="https://img.shields.io/badge/-Microverse-blueviolet?style=plastic">
@@ -19,13 +18,22 @@
 
 # PokeStats
 
-> An awesome React/Redux application that displays the stats of a Pokemon. 
+> An awesome React/Redux application that displays the stats of a specific Pokemon. 
 > You can filter through the list of Pokemon and see the stats of the Pokemon you choose.
+> It is builded using the Single Page App (SPA) structure that allows users to:
+    - See a filtered list of pokemons by their Types.
+    - See stats of each pokemon once you click on each one of them.
+    - Enjoy a relaxing music of Pokemon Center in the background.
+    - If you are a developer, try to look for the easter egg that allows you to display music controls.
 > 
 
-| Desktop version | Mobile version|
+| Desktop version (Home View) | Mobile version (Home View)|
 |-----------------|---------------|
-| ![Desktop_image](./readme_imgs/desktop_ver.png) | ![Mobile_Image](./readme_imgs/mobile_ver.png) | 
+| ![Desktop_image](./readme_imgs/desktop_ver.png) | ![Mobile_Image](./readme_imgs/mobile_ver.png) |
+
+| Desktop version (Pokemon View) | Mobile version (Pokemon View)|
+|-----------------|---------------|
+| ![Desktop_image](./readme_imgs/desktop_ver1.png) | ![Mobile_Image](./readme_imgs/mobile_ver1.png) | 
 
 ## Built With
 
@@ -54,6 +62,26 @@ To get a local copy up and running follow these simple example steps.
 - After downloading run `npm i` to install all Node packages.
 - Run `npm start` to run the project.
 
+## Test
+
+- After cloning the project you need to run these commands
+  > `npm install`
+  > This command will download all the dependancies of the project.
+
+As this project counts with css and javascript, you will need to test the following:
+- For tracking linter errors in CSS or SASS  files run:
+  > `npx stylelint "\*_/_.{css,scss}"`
+- And for tracking linter errors in JavaScript files run:
+  > `npx eslint .`
+Or you can use this command if you want to just automatically solve the linter errors:
+  > `npm run fixlinters`
+
+At least, use the following command to run all the tests:
+  > `npm test`
+and after that it will prompt you to an interactive window where you have to select:
+  > `Press a` 
+And that should be it.
+
 ## Author
 
 👤 **Luis Abarca**
@@ -69,6 +97,10 @@ Feel free to check the [issues page](../../issues/).
 ## Show your support
 
 Give a ⭐️ if you like this project!
+
+## Acknowledgments
+
+Original design idea by Nelson Sakwa in [Behance](https://www.behance.net/sakwadesignstudio).
 
 ## 📝 License
 
