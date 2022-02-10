@@ -1,15 +1,16 @@
 {
   "files": {
-    "main.css": "/pokestats-react_redux/static/css/main.cc7f20de.css",
-    "main.js": "/pokestats-react_redux/static/js/main.ae96e4dc.js",
+    "main.css": "/pokestats-react_redux/static/css/main.09749341.css",
+    "main.js": "/pokestats-react_redux/static/js/main.6b5709d1.js",
     "static/media/110-pokemon_center.mp3": "/pokestats-react_redux/static/media/110-pokemon_center.18dd21a3712410e99690.mp3",
     "static/media/pokeball.svg": "/pokestats-react_redux/static/media/pokeball.e57f7ae634ea599f04f057a700d4bbe2.svg",
     "index.html": "/pokestats-react_redux/index.html",
-    "main.cc7f20de.css.map": "/pokestats-react_redux/static/css/main.cc7f20de.css.map",
-    "main.ae96e4dc.js.map": "/pokestats-react_redux/static/js/main.ae96e4dc.js.map"
+    "static/media/110-pokemon_center.mp3.vtt": "/pokestats-react_redux/static/media/110-pokemon_center.mp3.0086239c458db8a462cb.vtt",
+    "main.09749341.css.map": "/pokestats-react_redux/static/css/main.09749341.css.map",
+    "main.6b5709d1.js.map": "/pokestats-react_redux/static/js/main.6b5709d1.js.map"
   },
   "entrypoints": [
-    "static/css/main.cc7f20de.css",
-    "static/js/main.ae96e4dc.js"
+    "static/css/main.09749341.css",
+    "static/js/main.6b5709d1.js"
   ]
 }
