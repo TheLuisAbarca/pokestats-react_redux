@@ -1,6 +1,8 @@
 import React from 'react';
 import { useDispatch } from 'react-redux';
+import { Col } from 'react-bootstrap';
 import { fetchPokemons } from '../../redux/filter/filter';
+import { changeName } from '../../redux/search/search';
 
 const PokeFilterTypes = () => {
   const pokemonCategories = [
@@ -30,12 +32,19 @@ const PokeFilterTypes = () => {
     if (e.target.value !== '') {
       setCategory(e.target.value);
       dispatch(fetchPokemons(e.target.value));
+      dispatch(changeName(''));
     }
     e.preventDefault();
   };
 
   return (
-    <div className="form-group w-75 m-auto">
+    <Col
+      xs={12}
+      sm={12}
+      md={6}
+      lg={6}
+      xl={6}
+    >
       <h3 className="d-flex justify-content-center align-items-center text-app">
         Pokemon Type:
         <span className="ml-2">
@@ -45,7 +54,7 @@ const PokeFilterTypes = () => {
           </select>
         </span>
       </h3>
-    </div>
+    </Col>
   );
 };
 

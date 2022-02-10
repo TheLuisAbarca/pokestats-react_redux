@@ -24,20 +24,39 @@ const AllPokemon = ({ pokemon, index }) => {
           align-items-end
           ${([1, 0, 0, 1][index % 4]) ? 'bg-dark1' : 'bg-dark2'}
         `}
+          style={{ height: '136px' }}
         >
-          <Row>
+          <Row
+            className={`
+            
+            w-100
+            `}
+          >
             <Col
-              xs={6}
+              xs={12}
+              sm={4}
+              md={4}
+              lg={4}
+              xl={4}
             >
-              <img src={pokemon.image} alt={pokemon.name} />
+              <img
+                src={pokemon.image}
+                alt={pokemon.name}
+                className="justify-content-center align-items-center"
+              />
+              <i className="d-sm-none justify-content-end far fa-arrow-alt-circle-right text-app mt-1 mb-4 h5 rightUpperIcon" />
             </Col>
             <Col
-              xs={6}
+              xs={12}
+              sm={8}
+              md={8}
+              lg={8}
+              xl={8}
             >
               <Row>
                 <Col
                   xs={12}
-                  className="d-flex justify-content-end"
+                  className="d-none d-sm-flex justify-content-end"
                 >
                   <i className="far fa-arrow-alt-circle-right text-app mt-1 mb-4 h5" />
                 </Col>
@@ -46,13 +65,20 @@ const AllPokemon = ({ pokemon, index }) => {
                 className="d-flex flex-column align-items-end text-white mt-4"
                 style={{ cursor: 'pointer' }}
               >
-                <h5 className="d-inline-block m-0 text-end fw-bold font-app">{pokemon.name.toUpperCase()}</h5>
-                <p className="font-app">
+                <h5
+                  className="d-inline-block m-0 text-end fw-bold font-app"
+                  style={{ fontSize: '0.8rem' }}
+                >
+                  {pokemon.name.toUpperCase()}
+                </h5>
+                <p
+                  className="font-app text-end fw-bold"
+                  style={{ width: '80px', fontSize: '0.8rem' }}
+                >
                   {
                   Number(pokemon.weight).toLocaleString()
-                }
-                  {' '}
-                  Kg.
+                  }
+                  {' Kg.'}
                 </p>
               </span>
             </Col>
